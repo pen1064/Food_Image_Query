@@ -3,9 +3,17 @@ Just a rapid proof-of-concept (5 hrs) for the iSO app that I am working on and p
 Downsize the database for idea testing. The data is from Food Images (Food-101). You can download it from https://www.kaggle.com/datasets/kmader/food41
 
 # Steps
-1. Use Resnet18 as feature selection 
-2. The features are then treated as vector 
+1. Use Resnet18 with pre-trained weight as feature selection 
+2. The features are then treated as vector and feed into approximate nearest neighor systems (Annoy library - Developed by Spotify)   
 3. Find the clustering based on cosine distance 
+
+#### So WHY Approximate but not KNN??
+1. KNN will be a O(n), if our database keeps increasing, it will take long to loop through all the images! (Oh no!)
+2. In this "Approximate" way, it's more efficient for us to search for related photos:
+   2.1 Forest of binary trees are formed by recursively cutting two randomly selected points with hyperplane 
+   2.2 For each tree, use piroity queue to find all the possible nodes (not just the ones along the same branch) 
+   2.3 Find the union of all the possible points for the trees, sort the distances for all the points accordingly 
+   2.4 This operation will be in the order of O(log(n))! Oh Yea! 
 
 # Expected Behavior
 Assuming the user upload this picture into our database:\
@@ -34,7 +42,7 @@ Our system rolls out these:\
 Of course, this rapid preliminary version is not getting perfect results as you can see from the notebook.\
 Currently, the system is doing quite well for french fries, fried rice, and donuts. I will probably spend some time either getting better picture from webscrapping or clean the image dataset more. Along with that, several more adjustments will be made:
 1. Need to cut the image center (too much distraction atm)
-2. Need to do some sensitivty analysis on the tree for Annoy :) 
+2. Need to do some sensitivty analysis on the tree and search-k for Annoy :) 
 3. Test out how it will be with a more sophisticated feature selector (Resnet50!) 
 4. Train the classification system just for the completeness
 5. Of course, nicer pictures (better lighting/ contrast/ more center) will definitely helps 
