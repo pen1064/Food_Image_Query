@@ -1,5 +1,5 @@
 # Food_Image_Query
-Just a rapid proof-of-concept (5 hrs) for my app and practice\
+Just a rapid proof-of-concept (5 hrs) for the iSO app that I am working on and practice\
 Downsize the database for idea testing. The data is from Food Images (Food-101). You can download it from https://www.kaggle.com/datasets/kmader/food41
 
 # Steps:
@@ -44,6 +44,8 @@ Currently, the system is doing quite well for french fries, fried rice, and donu
 2. https://github.com/spotify/annoy
 3. K. He, X. Zhang, S. Ren, and J. Sin. Deep Residual Learning for Image Recognition. 2015
 
-Here is the potato :) 
-![image](https://user-images.githubusercontent.com/45325095/166092643-7ee36d9e-2033-423f-a52e-fc77818be7ab.png)
+
+Here is the potato :) \
+<img src="https://user-images.githubusercontent.com/45325095/166092643-7ee36d9e-2033-423f-a52e-fc77818be7ab.png" width="100" height="100" />
+
 
