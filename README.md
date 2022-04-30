@@ -8,11 +8,11 @@ Downsize the database for idea testing. The data is from Food Images (Food-101).
 3. Find the clustering based on cosine distance 
 
 # Expected Behavior:
-Assume the user upload this picture into our database:\
+Assuming the user upload this picture into our database:\
 ![image](https://user-images.githubusercontent.com/45325095/166091347-ece9690b-8a49-43d6-8f4f-b20d07a552a3.png)
 
 Our system should be able to roll out similar pictures that the other uses took (already in the database)\
-![image](https://user-images.githubusercontent.com/45325095/166091330-9701fa36-982f-4cad-8226-cf66ec9e6884.png)
+![image](https://user-images.githubusercontent.com/45325095/166092424-6bbdbef7-b50c-4f39-b2e8-162bf4fc25e7.png)
 
 
 # Upcoming Future Work:
