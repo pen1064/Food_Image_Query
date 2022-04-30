@@ -7,14 +7,17 @@ Downsize the database for idea testing. The data is from Food Images (Food-101).
 2. The features are then treated as vector 
 3. Find the clustering based on cosine distance 
 
-Assume the user upload this picture into our database:
-<img width="184" alt="image" src="https://user-images.githubusercontent.com/45325095/166091220-20990a77-c1ab-47de-9fa8-82112f9ad778.png">
+# Expected Behavior:
+Assume the user upload this picture into our database:\
+![image](https://user-images.githubusercontent.com/45325095/166091347-ece9690b-8a49-43d6-8f4f-b20d07a552a3.png)
 
-Our system should be able to roll out similar pictures that the other uses took (already in the database)
-<img width="248" alt="image" src="https://user-images.githubusercontent.com/45325095/166091238-71b75983-1bb9-4e3d-8060-6fbbb2446190.png">
+Our system should be able to roll out similar pictures that the other uses took (already in the database)\
+![image](https://user-images.githubusercontent.com/45325095/166091330-9701fa36-982f-4cad-8226-cf66ec9e6884.png)
+
 
 
 # Upcoming Future Work:
+Of course, this rapid preliminary version is not getting perfect results as you can see from the notebook. Here are adjustments:
 1. Need to cut the image center (too much distraction atm)
 2. Need to do some sensitivty analysis on the tree for Annoy :) 
 3. Test out how it will be with a more sophisticated feature selector (Resnet50!) 
