@@ -9,10 +9,25 @@ Downsize the database for idea testing. The data is from Food Images (Food-101).
 
 # Expected Behavior:
 Assuming the user upload this picture into our database:\
+Case 1:\
 ![image](https://user-images.githubusercontent.com/45325095/166091347-ece9690b-8a49-43d6-8f4f-b20d07a552a3.png)
 
 Our system should be able to roll out similar pictures that the other uses took (already in the database)\
 ![image](https://user-images.githubusercontent.com/45325095/166092424-6bbdbef7-b50c-4f39-b2e8-162bf4fc25e7.png)
+
+Case 2:\
+User uploads this:\
+![image](https://user-images.githubusercontent.com/45325095/166092457-e839f603-7270-4586-bb5a-991b9be5c80f.png)
+
+Our system rolls out these:\
+![image](https://user-images.githubusercontent.com/45325095/166092491-a492925c-b808-41ff-ab9c-f8ab844c82dd.png)
+
+Case 3 (My Favorite French Fries!):
+User uploads this:\
+![image](https://user-images.githubusercontent.com/45325095/166092515-30c6f7bb-8075-4225-b2aa-89141a5be614.png)
+
+Our system rolls out these:\
+![image](https://user-images.githubusercontent.com/45325095/166092523-d4bfd2c3-9347-4cc5-bcc5-3ac92fffdf71.png)
 
 
 # Upcoming Future Work:
@@ -28,3 +43,7 @@ Currently, the system is doing quite well for french fries, fried rice, and donu
 1. Food-101 Database from Kaggle https://www.kaggle.com/datasets/kmader/food41
 2. https://github.com/spotify/annoy
 3. K. He, X. Zhang, S. Ren, and J. Sin. Deep Residual Learning for Image Recognition. 2015
+
+Here is the potato :) 
+![image](https://user-images.githubusercontent.com/45325095/166092643-7ee36d9e-2033-423f-a52e-fc77818be7ab.png)
+
