@@ -15,9 +15,9 @@ Our system should be able to roll out similar pictures that the other uses took 
 ![image](https://user-images.githubusercontent.com/45325095/166091330-9701fa36-982f-4cad-8226-cf66ec9e6884.png)
 
 
-
 # Upcoming Future Work:
-Of course, this rapid preliminary version is not getting perfect results as you can see from the notebook. Here are adjustments:
+Of course, this rapid preliminary version is not getting perfect results as you can see from the notebook.\
+Currently, the system is doing quite well for french fries, fried rice, and donuts. I will probably spend some time either getting better picture from webscrapping or clean the image dataset more. Along with that, several more adjustments will be made:
 1. Need to cut the image center (too much distraction atm)
 2. Need to do some sensitivty analysis on the tree for Annoy :) 
 3. Test out how it will be with a more sophisticated feature selector (Resnet50!) 
